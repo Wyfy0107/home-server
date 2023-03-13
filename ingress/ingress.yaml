@@ -11,7 +11,7 @@ spec:
     - host: cube.local
       http:
         paths:
-          - path: /
+          - path: /api/v1/places
             pathType: Prefix
             backend:
               service:
