@@ -8,7 +8,7 @@ metadata:
     ingress.kubernetes.io/ssl-redirect: 'false'
 spec:
   rules:
-    - host: helsinki-places.cube.local
+    - host: cube.local
       http:
         paths:
           - path: /helsinki-places
