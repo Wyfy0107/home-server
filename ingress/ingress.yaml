@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: home-ingress
-  namespace: argo-cd
+  namespace: projects
   annotations:
     kubernetes.io/ingress.class: 'traefik'
     ingress.kubernetes.io/ssl-redirect: 'false'
@@ -10,10 +10,10 @@ spec:
   rules:
     - http:
         paths:
-          - path: /argocd
+          - path: /helsinki-places
             pathType: Prefix
             backend:
               service:
-                name: argo-cd-argocd-server
+                name: helsinki-places-api-svc
                 port:
                   number: 80
