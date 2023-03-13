@@ -11,5 +11,7 @@ spec:
           - path: /argocd
             pathType: Prefix
             backend:
-              serviceName: argo-cd-argocd-server.argo-cd.svc.cluster.local
-              servicePort: 80
+              service:
+                name: argo-cd-argocd-server.argo-cd.svc.cluster.local
+                port:
+                  number: 80
