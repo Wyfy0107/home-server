@@ -1,0 +1,14 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: nginx-ingress
+  annotations:
+    kubernetes.io/ingress.class: 'traefik'
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /argocd
+            backend:
+              serviceName: argo-cd-argocd-server.argo-cd.svc.cluster.local
+              servicePort: 80
