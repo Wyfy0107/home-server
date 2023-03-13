@@ -2,6 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: home-ingress
+  namespace: argo-cd
   annotations:
     kubernetes.io/ingress.class: 'traefik'
 spec:
@@ -12,6 +13,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: argo-cd-argocd-server.argo-cd.svc.cluster.local
+                name: argo-cd-argocd-server
                 port:
                   number: 80
