@@ -15,8 +15,8 @@ spec:
   usages:
     - server auth
     - client auth
-  ipAddresses:
-    - 192.168.10.161
+  dnsNames:
+    - home.mlem-mlem.net
   issuerRef:
     name: letsencrypt-route53
     kind: ClusterIssuer
