@@ -1,8 +1,0 @@
-apiVersion: traefik.containo.us/v1alpha1
-kind: TLSStore
-metadata:
-  name: default-cert
-  namespace: kube-system
-spec:
-  defaultCertificate:
-    secretName: home-server-ingress-cert-secret

@@ -1,2 +1,4 @@
 accessKeyId: ''
 secretAccessKey: ''
+awsRegion: ''
+hostedZoneId: ''
