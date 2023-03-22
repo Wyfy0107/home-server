@@ -3,8 +3,6 @@ kind: Ingress
 metadata:
   name: home-ingress
   namespace: projects
-  annotations:
-    kubernetes.io/ingress.class: 'traefik'
 spec:
   tls:
     - hosts:
