@@ -14,7 +14,9 @@ spec:
     - host: home.mlem-mlem.net
       http:
         paths:
-          - backend:
+          - path: /api/v1/places/all
+            pathType: Prefix
+            backend:
               service:
                 name: helsinki-places-api-svc
                 port:
